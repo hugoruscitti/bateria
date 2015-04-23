@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Name=bateria
+Comment=Comment
+Exec=/usr/bin/bateria
+Terminal=false
+Type=Application
+Icon=bateria
+Categories=GNOME;GTK;Huayra;Network;

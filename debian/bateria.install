@@ -1,0 +1,4 @@
+dist/* usr/share/bateria/dist
+bin/bateria usr/bin/
+debian/bateria.desktop /usr/share/applications
+debian/bateria.svg /usr/share/icons/hicolor/scalable/apps
