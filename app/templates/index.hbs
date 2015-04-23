@@ -1,3 +1,30 @@
 {{outlet}}
 
 {{#ui-matrix}}{{/ui-matrix}}
+
+
+
+
+{{fa-icon "refresh" size=2 spin=true}}
+
+
+
+<!--id is important, so we can reference it on the toggler component-->
+   {{#em-modal configName="bs" id="modal1"}}
+   {{#em-modal-title}}
+       <!--optional toggler to close the opened modal-->
+       {{#em-modal-toggler class="close"}}×Close{{/em-modal-toggler}}
+       <h4 class="modal-title">I'm a modal title</h4>
+   {{/em-modal-title}}
+   <!--the content of the modal...-->
+   {{#em-modal-body}}
+       One fine body…
+   {{/em-modal-body}}
+   <!--optional footer section of the modal, usually contains buttons-->
+   {{#em-modal-footer}}
+       {{#em-modal-toggler class="btn btn-default"}}Close{{/em-modal-toggler}}
+   {{/em-modal-footer}}
+{{/em-modal}}
+
+<!--the toggler to open the modal when clicked, modal-id property must reference the modal's id-->
+{{#em-modal-toggler modal-id="modal1" class="btn btn-primary"}}Click me!{{/em-modal-toggler}}
