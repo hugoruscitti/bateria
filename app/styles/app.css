@@ -5,3 +5,8 @@ html, body {
 a.active {
   font-weight: bold;
 }
+
+
+.widget {
+  border: 1px solid red;
+}
